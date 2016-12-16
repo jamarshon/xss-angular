@@ -1,4 +1,4 @@
-XSS-Angular
+#XSS-Angular
 A website documentation for how to exploit Angular's sandbox through XSS (Cross-Site Scripting)
 
 The site can be found here (https://xss-angular.herokuapp.com/) and it goes through a series of 
