@@ -1,0 +1,12 @@
+.tab-1 {
+	padding-left: 2em;
+}
+
+h3 {
+	margin-top: 28px;
+}
+
+.live > code {
+    background-color: #96b4ed;
+    color: white;
+}

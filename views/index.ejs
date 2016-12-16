@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<title>XSS Angular Example</title>
+
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore.js"></script>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Bootstrap -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- Angular -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
+
+	<link rel="stylesheet" href="/stylesheets/style.css">
+	<script src="/javascripts/script.js"></script>
+</head>
+<body ng-app="App" ng-controller="Ctrl">
+	<div class="container">
+		<div style="display: inline-block;"><h1>XSS Angular Example </h1></div>
+		<div style="display: inline-block; font-size: 24px; top: -4px; margin-left: 12px; position: relative;">(for Angular version 1.2.16)</div>
+		<div style="height: 35px;">
+   			<div style="display: inline-block; font-size: 16px; float: left; height: 100%; padding-top: 8px;">
+   				Status: <span ng-bind="statusMessage" ng-style="{color: isDangerous ? 'red' : 'green'}"></span>
+   			</div>
+	    	<button style="display: inline-block; float: right;" type="button" class="btn btn-danger" ng-click="cleanDB()">Clean DB</button>
+	    </div>
+	</div>
+	<div id="documentation-container" style="padding-bottom: 100px; height: calc(100vh - 105px); overflow-y: auto;">
+		<div class="container">
+	    <div class="container">
+		    <div>
+		    	<h3>Introduction</h3>
+		        <p style="margin-top: 12px;">XSS or cross-site scripting is a security flaw that exists when an attacker can execute JavaScript
+		        	on another user's browser. This is a serious concern because normally only the website's code and possibly the user's code will
+		        	be running on a page (no code from an additional third-party). XSS enables attackers to inject client-side scripts into web pages 
+		        	viewed by other users. A cross-site scripting  vulnerability may be used by attackers to gain access to other users' credentials or to submit requests on their behalf.</p>
+		        <p style="margin-top: 12px;">This issue can usually occur in two ways in an Angular application: server template of user inputs or 
+		        	through clever manipulation of the Angular's compilation/binding of the DOM. For the latter case, there is a sandbox in place
+		        	that prevents execution of unsafe JavaScript but there are ways to bypass this. The code to bypass is dependent on the Angular 
+		        	version as seen here (http://blog.portswigger.net/2016/01/xss-without-html-client-side-template.html) but the one for Angular 1.2.16  will be used in this demo:<p>
+		        <div style="margin-top: 12px; font-size: 18px;">
+		        	<code ng-non-bindable>{{(_=''.sub).call.call({}[$='constructor'].getOwnPropertyDescriptor(_.__proto__,$).value,0,'alert(hackMessage)')()}}</code>
+		        </div>
+		        <p style="margin-top: 12px;">In this demo, refreshing the page signifies a new user meaning that if any JavaScript executes from the
+		        	previous session, then it shows the website has been hacked as an attacker has executed JavaScript on a clean site / other user.
+		        	This can be identified by an alert message on refresh <i class="fa fa-smile-o" aria-hidden="true"></i> .<p>
+		    </div>
+
+		    <div>
+		        <h3>User Input Reflected in Server-Side Template without Parsing <danger-circle></danger-circle></h3>
+		        <p style="margin-top: 12px;">The user input is sent back to the database where it will be persisted. When the page is accessed again,
+		        	the server will inject the user input into the HTML before sending it to client which will allow the hacker to place any type of
+		        	HTML/JS code into the DOM.</p>
+		        <div style="font-size: 18px;"><code>&lt;p&gt;Server rendered: &lt;%-serverTemplateUnparsedText%&gt;&lt;/p&gt;</code></div>
+
+		        <div style="padding: 8px 12px; display: -webkit-box; display: -ms-flexbox; display: flex;">
+		        	<input type="text" ng-model="serverTemplateUnparsedText" style="width: 100%;">
+		        	<button type="button" class="btn btn-default" ng-click="serverTemplateUnparsedText = hackScriptText" style="margin-left: 8px;">Populate with Script Text</button>
+					<button type="button" class="btn btn-primary" ng-click="submitServerTemplateUnparsed()" style="margin-left: 8px;">Save</button>
+			    </div>
+			    <p style="display: none"><%-serverTemplateUnparsedText%></p>
+			    <div class="live" style="font-size: 18px;"><code>&lt;p&gt;Server rendered: <%=serverTemplateUnparsedText%>&lt;/p&gt;</code></div>
+		    </div>
+
+		    <div id="a0">
+		        <h3>Angular Interpolation of User Input <safe-circle></safe-circle></h3>
+		        <p style="margin-top: 12px;">The element will use interpolation of the user input to place it into the HTML (Note: this is safe as 
+		        	interpolationText will be interpolated to a string and not executed)</p>
+		    	<div style="font-size: 18px;"><code ng-non-bindable>&lt;div id=&quot;{{interpolationText}}&quot;&gt;&lt;/div&gt;</code></div>
+
+		    	<div style="padding: 8px 12px; display: -webkit-box; display: -ms-flexbox; display: flex;">
+			        <input type="text" ng-model="interpolationText" style="width: 100%;">
+			        <button type="button" class="btn btn-default" ng-click="interpolationText = hackSandBoxText" style="margin-left: 12px;">Populate with Sandbox Escape Text</button>
+					<button type="button" class="btn btn-primary" ng-click="submitInterpolationText()" style="margin-left: 8px;">Save</button>
+		        </div>
+
+		        <div class="live" id="{{interpolationText}}" style="margin-top: 12px; font-size: 18px;">
+		        	<code>&lt;div id=&quot;{{interpolationText}}&quot;&gt;&lt;/div&gt;</code>
+		        </div>
+		    </div>
+
+		    <div id="a1">
+		        <h3>Angular Binding after Constructing User Input <danger-circle></danger-circle></h3>
+		        <p style="margin-top: 12px;">In this case, the user input has been taken and using some DOM manipulation such as jQuery or jqLite
+		        	the raw user input has been injected into the HTML element that will be rendered. <b>Avoid creating your element or modifying the 
+		        	attributes of an existing element with values taken from user input</b>. Notice how the element that is compiled has className being directly
+		        	user input so it does not get the protection of interpolation mentioned before. The <b>$compile</b> function causes the JS to execute 
+		        	which could be called natively (when a DOM element is loaded and Angular needs to bind to the HTML to make it dynamic) or in the 
+		        	code of the application which calls $compile for whatever reason.</p>
+		    	<div style="font-size: 18px;">
+		    			<code>$scope.createElement = function() { </code><br/>
+						<code class="tab-1">var element = document.createElement('div');</code><br/>
+						<code class="tab-1">element.className = $scope.constructionText;</code><br/>
+						<code class="tab-1">angular.element('#construction-text-container').append(element);</code><br/>
+						<code class="tab-1">$compile(element)($scope);</code><br/>
+						<code>};</code><br/>
+						<code>// dangerous element could be compiled here <span ng-non-bindable>&lt;div class=&quot;{{(_=''.sub).call... 'alert(hackMessage)')()}} ng-scope&quot;&gt;&lt;/div&gt;</span></code><br/>
+		    	</div>
+		    	
+		    	<div style="padding: 8px 12px; display: -webkit-box; display: -ms-flexbox; display: flex;">
+			        <input type="text" ng-model="constructionText" style="width: 100%;">
+			        <button type="button" class="btn btn-default" ng-click="constructionText = hackSandBoxText" style="margin-left: 12px;">Populate with Sandbox Escape Text</button>
+			        <button type="button" class="btn btn-primary" ng-click="createElement()" style="margin-left: 12px;">Create Element</button>
+		        </div>
+		        <div id="construction-text-container" style="display: none;"></div>
+		        <div style="margin-top: 12px; font-size: 18px;" ng-if="a1Items.length">
+		        	<div ng-repeat="item in a1Items track by $index" class="live"><code>{{item}}</code></div>
+		        </div>
+		    </div>
+
+		    <div id="a2">
+		        <h3>Ng-Include User Input without Interpolation <danger-circle></danger-circle></h3>
+
+		        <p style="margin-top: 12px;">$compile is called for ng-include as seen below. Notice how it is concatenation (which does not protect) and not interpolation.</p>
+		        <div style="font-size: 18px;">
+	    			<code>$templateCache.put('htmlContentUrl', '&lt;div id=&quot;' + $scope.ngIncludeText + '&quot;&gt;&lt;/div&gt;'); </code><br/>
+	    			<code>$scope.loadedDB = true; </code><br/> <br/>
+	    			<code>// in the HTML (&lt;div ng-include=&quot;'htmlContentUrl'&quot; ng-if=&quot;loadedDB&quot;&gt;&lt;)</code>
+		    	</div>
+		        <div class="compiled" ng-include="'htmlContentUrl'" ng-if="loadedDB" style="display: none;"></div>
+		        <div style="padding: 8px 12px; display: -webkit-box; display: -ms-flexbox; display: flex;">
+			        <input type="text" ng-model="ngIncludeText" style="width: 100%;">
+			        <button type="button" class="btn btn-default" ng-click="ngIncludeText = hackSandBoxText" style="margin-left: 12px;">Populate with Sandbox Escape Text</button>
+			        <button type="button" class="btn btn-primary" ng-click="saveNgIncludeText()" style="margin-left: 12px;">Save</button>
+		        </div>
+		        <div class="live" style="font-size: 18px;">
+	    			<code>&lt;div ng-include=&quot;'htmlContentUrl'&quot; ng-if=&quot;loadedDB&quot;&gt;</code><br/>
+	    			<code class="tab-1">{{ngIncludeCompiled}}</code> <br/>
+	    			<code>&lt;div&gt;&lt;/div&gt;</code>
+		    	</div>
+		    </div>
+
+		    <div id="a3">
+		        <h3>Ng-Bind-Html User Input <safe-circle></safe-circle></h3>
+
+		        <p style="margin-top: 12px;">The ng-bind-html directive does not call the $compile function so it is safe to include user input using any method. </p>
+		        <div style="font-size: 18px;">
+	    			<code>$templateCache.put('htmlContentUrl', '&lt;div id=&quot;' + $scope.ngIncludeText + '&quot;&gt;&lt;/div&gt;'); </code><br/>
+	    			<code>$scope.loadedDB = true; </code><br/> <br/>
+	    			<code>// in the HTML (&lt;div ng-include=&quot;'htmlContentUrl'&quot; ng-if=&quot;loadedDB&quot;&gt;&lt;)</code>
+		    	</div>
+		        <div class="compiled" ng-bind-html="ngBindHtmlFull" style="display: none;"></div>
+		        <div style="padding: 8px 12px; display: -webkit-box; display: -ms-flexbox; display: flex;">
+			        <input type="text" ng-model="ngBindHtmlText" style="width: 100%;">
+			        <button type="button" class="btn btn-default" ng-click="ngBindHtmlText = hackSandBoxText" style="margin-left: 12px;">Populate with Sandbox Escape Text</button>
+			        <button type="button" class="btn btn-primary" ng-click="saveNgBindHtmlText()" style="margin-left: 12px;">Save</button>
+		        </div>
+		        <div class="live" style="font-size: 18px;">
+	    			<code>&lt;div ng-bind-html=&quot;ngBindHtmlFull&quot;&gt;&lt;/div&gt;</code><br/>
+	    			<code class="tab-1">{{ngBindHtmlCompiled}}</code> <br/>
+	    			<code>&lt;div&gt;&lt;/div&gt;</code>
+		    	</div>
+		    </div>
+	    </div>
+	    </div>
+	</div>
+</body>
+</html>
