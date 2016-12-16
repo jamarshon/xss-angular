@@ -1,8 +1,8 @@
 {
     "db": {
-        "serverTemplateUnparsedText": "<script type=\"text/javascript\">alert(\"You have been hacked!\")</script>",
-        "interpolationText": "{{(_=''.sub).call.call({}[$='constructor'].getOwnPropertyDescriptor(_.__proto__,$).value,0,'alert(hackMessage)')()}}",
+        "serverTemplateUnparsedText": "",
+        "interpolationText": "",
         "ngIncludeText": "",
-        "ngBindHtmlText": "e"
+        "ngBindHtmlText": ""
     }
 }
