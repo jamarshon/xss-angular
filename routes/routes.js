@@ -37,10 +37,10 @@ router.get('/templates/:templateName', function(req, res, next) {
 	res.render('templates/' + req.params.templateName);
 });
 
-router.get('/serverTemplates/:templateName', function(req, res, next) {
+router.get('/server-templates/:templateName', function(req, res, next) {
 	databaseOperationFn(DB_PATH, function(obj){
 		var deferred = Q.defer();
-		res.render('serverTemplates/' + req.params.templateName, obj.db);
+		res.render('server-templates/' + req.params.templateName, obj.db);
 		deferred.resolve(null);
 		return deferred.promise;
 	}, res);

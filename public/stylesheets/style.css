@@ -30,6 +30,8 @@ code {
 .live > code {
     background-color: #96b4ed;
     color: white;
+    font-size: 18px;
+    margin-top: 12px; 
 }
 
 #main-title-header {

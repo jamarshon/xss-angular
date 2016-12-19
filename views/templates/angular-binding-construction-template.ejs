@@ -1,4 +1,4 @@
-<div id="angular-1">
+<div id="angular-binding-construction">
     <h3>Angular Binding after Constructing User Input <danger-circle></danger-circle></h3>
     <p style="margin-top: 12px;">In this case, the user input has been taken and using some DOM manipulation such as jQuery or jqLite
     	the raw user input has been injected into the HTML element that will be rendered. <b>Avoid creating your element or modifying the 
@@ -18,7 +18,7 @@
 
     <one-input-two-buttons 
     	input-text-key="constructionText" 
-    	input-text-model="constructionText"
+    	input-text-model="sharedDynamicData.constructionText"
 			hack-input-text="hackSandBoxText"
 			populate-button-label="Populate with Sandbox Escape Text"
 			submit-button-label="Create Element"
@@ -26,7 +26,5 @@
 			inherited-submit-fn="createElement()"></one-input-two-buttons>
 
     <div id="construction-text-container" style="display: none;"></div>
-    <div style="margin-top: 12px; font-size: 18px;" ng-if="a1Items.length">
-    	<div ng-repeat="item in a1Items track by $index" class="live"><code>{{item}}</code></div>
-    </div>
+  	<div class="live"><code>{{sharedDynamicData.constructCompiled}}</code></div>
 </div>

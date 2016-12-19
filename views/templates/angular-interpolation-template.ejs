@@ -1,0 +1,24 @@
+<div id="angular-interpolation">
+  <h3>Angular Interpolation of User Input <safe-circle></safe-circle></h3>
+  <p style="margin-top: 12px;">The element will use interpolation of the user input to place it into the HTML (Note: this is safe as 
+  	interpolationText will be interpolated to a string and not executed)</p>
+  	
+	<div style="font-size: 18px;"><code ng-non-bindable>&lt;div id=&quot;{{interpolationText}}&quot;&gt;&lt;/div&gt;</code></div>
+
+  <one-input-two-buttons 
+  	input-text-key="interpolationText" 
+  	input-text-model="sharedDynamicData.interpolationText"
+		hack-input-text="hackSandBoxText"
+		populate-button-label="Populate with Sandbox Escape Text"
+		submit-button-label="Save"
+		status-message="sharedDynamicData.statusMessage"
+		is-dangerous="sharedDynamicData.isDangerous"
+		is-safe="true"
+		text-same-hack-label="Refresh page to see that the JS becomes string and is not executed"
+		text-different-hack-label="Refresh page to see input stored"
+		start-timer="startTimer()"></one-input-two-buttons>
+
+  <div class="live" id="{{sharedDynamicData.interpolationText}}">
+  	<code>&lt;div id=&quot;{{sharedDynamicData.interpolationText}}&quot;&gt;&lt;/div&gt;</code>
+  </div>
+</div>

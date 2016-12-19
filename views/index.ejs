@@ -34,26 +34,33 @@
 			<div id="main-title-header"><h1 style="font-size: 2.2em;">XSS Angular Example </h1></div>
 			<div class="hidden-xs" style="font-size: 24px; padding-top: 19px; margin-left: 12px;">(for Angular version 1.2.16)</div>
 		</div>
+
 		<div style="height: 35px;">
    			<div style="display: inline-block; font-size: 16px; float: left; height: 100%; padding-top: 8px; margin-right: 24px;">
-   				Status: <span ng-bind="hacked ? 'Hacked' : 'Safe'" ng-style="{color: hacked ? 'red' : 'green'}" style="font-weight: bold;"></span>
+   				Status: 
+   				<span ng-bind="sharedDynamicData.hacked ? 'Hacked' : 'Safe'" 
+   							ng-style="{color: sharedDynamicData.hacked ? 'red' : 'green'}" style="font-weight: bold;"></span>
    			</div>
    			<div style="display: inline-block; font-size: 16px; float: left; height: 100%; padding-top: 8px;">
-   				Message: <span ng-bind="statusMessage" ng-style="{color: isDangerous ? 'red' : 'green'}"></span>
+   				Message: 
+   				<span ng-bind="sharedDynamicData.statusMessage" 
+   							ng-style="{color: sharedDynamicData.isDangerous ? 'red' : 'green'}"></span>
    			</div>
-	    	<button ng-disabled="!hacked" style="display: inline-block; float: right;" type="button" class="btn btn-danger" ng-mousedown="cleanDBPlusRefresh()">Clean DB and Remove Hack</button>
-	    </div>
+	    	<button ng-disabled="!sharedDynamicData.hacked" style="display: inline-block; float: right;" 
+	    					type="button" class="btn btn-danger" ng-mousedown="cleanDBPlusRefresh()">Clean DB and Remove Hack</button>
+    </div>
+
 	</div>
 	<div id="documentation-container" style="padding-bottom: 100px; height: 100%; overflow-y: auto; overflow-x: auto;">
 		<div class="container">
 	    <div class="container">
 		    <div ng-include="'/templates/introduction-template.ejs'"></div>
-		    <div ng-include="'/serverTemplates/server-side-rendering-template.ejs'"></div>
+		    <div ng-include="'/server-templates/server-side-rendering-template.ejs'"></div>
 
-		    <div ng-include="'/templates/angular-0-template.ejs'"></div>
-		    <div ng-include="'/templates/angular-1-template.ejs'"></div>
-		    <div ng-include="'/templates/angular-2-template.ejs'"></div>
-		    <div ng-include="'/templates/angular-3-template.ejs'"></div>
+		    <div ng-include="'/templates/angular-interpolation-template.ejs'"></div>
+		    <div ng-include="'/templates/angular-binding-construction-template.ejs'"></div>
+		    <div ng-include="'/templates/ng-include-without-interpolation-template.ejs'"></div>
+		    <div ng-include="'/templates/ng-bind-html-user-input-template.ejs'"></div>
 	    </div>
 	    </div>
 	</div>
