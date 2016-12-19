@@ -1,26 +1,41 @@
-var express = require('express');
-var path = require('path');
-var favicon = require('serve-favicon');
-var logger = require('morgan');
-var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
+var bodyParser    = require('body-parser');
+var cookieParser  = require('cookie-parser');
+var compression   = require('compression');
+var express       = require('express');
+var favicon       = require('serve-favicon');
+var logger        = require('morgan');
+var mime          = require('mime');
+var path          = require('path');
 
 var routes = require('./routes/routes');
 
 var app = express();
 
+app.use(compression());
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'ejs');
 
 // uncomment after placing your favicon in /public
-app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+var isProduction = app.get('env') === 'production';
+var publicPath = isProduction ? 'public/dist' : 'public';
+var oneYear = 31536000;
+var productionCache = {setHeaders: function (res, path) {
+    var type = mime.lookup(path);
+    if(type === 'application/javascript' || type === 'text/css') {
+      res.setHeader('Cache-Control', 'public, max-age=' + oneYear);
+    }
+  }
+};
+var options = isProduction ? productionCache : {};
+
+app.use(favicon(path.join(__dirname, publicPath, 'favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, publicPath), options));
 
 app.use('/', routes);
 

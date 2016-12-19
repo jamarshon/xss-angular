@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('XSSAngularApp')
-	.factory('ResizeAndScrollService', function($window){
+	.factory('ResizeAndScrollService', ['$window', function($window){
 		var ResizeAndScrollService = function(scope) {
 			this._scope = scope;
 		};
@@ -52,6 +52,6 @@ angular.module('XSSAngularApp')
 		};
 
 		return ResizeAndScrollService;
-	});
+	}]);
 	
 	

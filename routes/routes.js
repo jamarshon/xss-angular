@@ -30,7 +30,9 @@ var databaseOperationFn = function(dataBasePath, dbOperationCallback, res) {
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-	res.render('index');
+	var isProduction = process.env.NODE_ENV === 'production';
+	var indexPath = isProduction ? 'production-index.min.ejs' : 'index.ejs';
+	res.render(indexPath);
 });
 
 router.get('/templates/:templateName', function(req, res, next) {

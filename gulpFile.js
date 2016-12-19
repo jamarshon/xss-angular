@@ -13,16 +13,17 @@ var templateCache = require('gulp-angular-templatecache');
 var uglify 				= require('gulp-uglify');
 
 gulp.task('js', function() {
-  gulp.src('public/javascripts/**/*.js')
+  gulp.src(['public/javascripts/**/*.js', '!public/javascripts/templates.js'])
 	  .pipe(uglify())
-	  .pipe(gulp.dest('public/javascripts/'))
+    .pipe(concat('script.min.js'))
+	  .pipe(gulp.dest('public/dist/javascripts/'));
 });
 
 gulp.task('css', function(){
   gulp.src('public/stylesheets/*.css')
     .pipe(minifyCSS())
     .pipe(concat('style.min.css'))
-		.pipe(gulp.dest('public/stylesheets/'));
+		.pipe(gulp.dest('public/dist/stylesheets/'));
 });
 
 gulp.task('html', function () {

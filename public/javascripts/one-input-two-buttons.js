@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('XSSAngularApp')
-	.controller('OneInputTwoButtonsCtrl', function($scope, $http){
+	.controller('OneInputTwoButtonsCtrl', ['$scope', '$http', function($scope, $http){
 		var submitFn = function() {
 			var postData = {key: $scope.inputTextKey, value: $scope.inputTextModel };
 			$http.post('/modifyDB', postData).then(function(){
@@ -22,7 +22,7 @@ angular.module('XSSAngularApp')
 		};
 
 		$scope.submitTextFields = $scope.isInherited ? $scope.inheritedSubmitFn : submitFn;
-	})
+	}])
 	.directive('oneInputTwoButtons', function(){
 		return {
 			templateUrl: '/templates/one-input-two-buttons-template.ejs',
