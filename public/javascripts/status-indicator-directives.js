@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 angular.module('XSSAngularApp')
 	.directive('safeCircle', function(){

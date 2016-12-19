@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"const",
+				"constructionText"
+			],
+			[
+				"resi",
+				"resizeAndScrollService"
+			],
+			[
 				"dis",
 				"discussion-youtube"
 			],
@@ -506,59 +514,42 @@
 			[
 				"Ut",
 				"utilHelper"
-			],
-			[
-				"transit",
-				"transition-duration"
-			],
-			[
-				"inline",
-				"inline-block"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "public/javascripts/script.js",
+			"file": "public/javascripts/main-ctrl.js",
 			"settings":
 			{
-				"buffer_size": 3643,
+				"buffer_size": 3351,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
+			"file": "gulpFile.js",
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 991,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "routes/routes.js",
+			"file": "public/dist/javascripts/templates.js",
 			"settings":
 			{
-				"buffer_size": 2098,
-				"encoding": "UTF-8",
+				"buffer_size": 9585,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "public/javascripts/status-indicator-directives.js",
+			"file": "views/index.ejs",
 			"settings":
 			{
-				"buffer_size": 380,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "public/javascripts/one-input-two-buttons.js",
-			"settings":
-			{
-				"buffer_size": 1350,
-				"encoding": "UTF-8",
+				"buffer_size": 3358,
 				"line_ending": "Windows"
 			}
 		}
@@ -652,15 +643,35 @@
 	[
 		"/C/Users/simon/Documents/Web Dev/xss-angular",
 		"/C/Users/simon/Documents/Web Dev/xss-angular/public",
+		"/C/Users/simon/Documents/Web Dev/xss-angular/public/dist",
 		"/C/Users/simon/Documents/Web Dev/xss-angular/public/javascripts",
 		"/C/Users/simon/Documents/Web Dev/xss-angular/routes",
 		"/C/Users/simon/Documents/Web Dev/xss-angular/views",
+		"/C/Users/simon/Documents/Web Dev/xss-angular/views/server-templates",
 		"/C/Users/simon/Documents/Web Dev/xss-angular/views/templates"
 	],
 	"file_history":
 	[
-		"/C/Users/simon/Documents/Web Dev/xss-angular/views/serverTemplates/server-side-rendering-template.ejs",
+		"/C/Users/simon/Documents/Web Dev/xss-angular/public/javascripts/ga.js",
 		"/C/Users/simon/Documents/Web Dev/xss-angular/views/index.ejs",
+		"/C/Users/simon/Documents/Web Dev/xss-angular/public/javascripts/templates.js",
+		"/C/Users/simon/Documents/Web Dev/xss-angular/views/templates/ng-bind-html-user-input-template.ejs",
+		"/C/Users/simon/Documents/Web Dev/xss-angular/views/server-templates/server-side-rendering-template.ejs",
+		"/C/Users/simon/Documents/Web Dev/xss-angular/views/templates/ng-include-without-interpolation-template.ejs",
+		"/C/Users/simon/Documents/Web Dev/xss-angular/views/templates/angular-binding-construction-template.ejs",
+		"/C/Users/simon/Documents/Web Dev/xss-angular/views/templates/angular-interpolation-template.ejs",
+		"/C/Users/simon/Documents/Web Dev/xss-angular/routes/routes.js",
+		"/C/Users/simon/Documents/Web Dev/xss-angular/views/templates/angular-3-template.ejs",
+		"/C/Users/simon/Documents/Web Dev/xss-angular/views/templates/angular-2-template.ejs",
+		"/C/Users/simon/Documents/Web Dev/xss-angular/views/templates/angular-1-template.ejs",
+		"/C/Users/simon/Documents/Web Dev/xss-angular/views/templates/angular-0-template.ejs",
+		"/C/Users/simon/Documents/Web Dev/xss-angular/public/javascripts/one-input-two-buttons.js",
+		"/C/Users/simon/Documents/Web Dev/xss-angular/public/stylesheets/style.css",
+		"/C/Users/simon/Documents/Web Dev/xss-angular/views/serverTemplates/server-side-rendering-template.ejs",
+		"/C/Users/simon/Documents/Web Dev/xss-angular/views/templates/one-input-two-buttons-template.ejs",
+		"/C/Users/simon/Documents/Web Dev/xss-angular/views/templates/introduction-template.ejs",
+		"/C/Users/simon/Documents/Web Dev/xss-angular/public/javascripts/status-indicator-directives.js",
+		"/C/Users/simon/Documents/Web Dev/xss-angular/public/javascripts/services/resize-and-scroll-service.js",
 		"/C/Users/simon/AppData/Local/Temp/7zOCA45.tmp/style.css",
 		"/C/Users/simon/Documents/Web Dev/nemoo/views/components/messageInput.ejs",
 		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/exploreCtrl.js",
@@ -768,25 +779,7 @@
 		"/C/Users/simon/Documents/Web Dev/nemoo/scripts/emoji-cheatsheet.js",
 		"/C/Users/simon/Documents/Web Dev/nemoo/scripts/raw-css-emoticons.txt",
 		"/C/Users/simon/Documents/Web Dev/nemoo/.gitignore",
-		"/C/Users/simon/Documents/Web Dev/nemoo/scripts/generateEmoji.js",
-		"/C/Users/simon/Documents/Web Dev/nemoo/scripts/emoji-cheatsheet.txt",
-		"/C/Users/simon/Documents/Web Dev/nemoo/test.txt",
-		"/C/Users/simon/Documents/Web Dev/nemoo/public/images/anonymous/generator.js",
-		"/C/Users/simon/Documents/Web Dev/nemoo/scripts/test.js",
-		"/C/Users/simon/Documents/Web Dev/nemoo/test/authenticationDialogCtrl.min.js",
-		"/C/Users/simon/Documents/Web Dev/nemoo/views/components/loader.ejs",
-		"/C/Users/simon/Documents/Web Dev/nemoo/views/loader.ejs",
-		"/C/Users/simon/AppData/Local/Temp/7zO8DDB.tmp/index.ejs",
-		"/C/Users/simon/AppData/Local/Temp/7zO2B67.tmp/loaderAnimationService.js",
-		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/discussionDialogCtrl",
-		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/header.js",
-		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/authenticationDialog.js",
-		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/panel.js",
-		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/messageInput.js",
-		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/ga.js",
-		"/C/Users/simon/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/C/Users/simon/Documents/Web Dev/nemoo/public/production/javascripts/header.js",
-		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/searchBox.js"
+		"/C/Users/simon/Documents/Web Dev/nemoo/scripts/generateEmoji.js"
 	],
 	"find":
 	{
@@ -797,6 +790,7 @@
 		"height": 96.0,
 		"where_history":
 		[
+			"C:\\Users\\simon\\Documents\\Web Dev\\xss-angular",
 			"C:\\Users\\simon\\Documents\\Web Dev\\nemoo, *.js",
 			"C:\\Users\\simon\\Documents\\Web Dev\\nemoo, *.ejs",
 			"C:\\Users\\simon\\Documents\\Web Dev\\nemoo, *.js",
@@ -817,6 +811,22 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"gulp",
+			"'",
+			");",
+			"require(",
+			"$",
+			"angular-3",
+			"angular-2",
+			"angular-1",
+			"angular-0",
+			"angular.isDefined(",
+			"undefined",
+			"ngIncludeCompiled",
+			"ngBindHtmlFull",
+			"ngincludecompiled",
+			"hacked",
+			"ngBindHtmlCompiled",
 			".",
 			"nodemon",
 			"quick",
@@ -928,23 +938,7 @@
 			"pageKey",
 			"ng-style",
 			"loggedin",
-			"  \nitem.",
-			"item.",
-			"refreshPage",
-			"isLoggedIn",
-			"_state",
-			"hardredirect",
-			"hardRedirect",
-			"setProperties",
-			"cacheFactory",
-			"404",
-			"40",
-			"generateAnonUser",
-			"Util.",
-			"generateAnonUserCat",
-			".val",
-			"options.text",
-			"options"
+			"  \nitem."
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -972,24 +966,24 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "public/javascripts/script.js",
+					"file": "public/javascripts/main-ctrl.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3643,
+						"buffer_size": 3351,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								949,
-								949
+								2412,
+								2412
 							]
 						],
 						"settings":
@@ -997,19 +991,76 @@
 							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": -0.0,
-						"translation.y": 1350.0,
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "gulpFile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 991,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								151,
+								125
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 197.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
+					"buffer": 2,
+					"file": "public/dist/javascripts/templates.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 9585,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								31,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "views/index.ejs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3358,
 						"regions":
 						{
 						},
@@ -1022,100 +1073,13 @@
 						],
 						"settings":
 						{
-							"default_dir": "C:\\Users\\simon\\Documents\\Web Dev\\xss-angular\\public\\javascripts\\services",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "routes/routes.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2098,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1140,
-								1140
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 509.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "public/javascripts/status-indicator-directives.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 380,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								250,
-								250
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.x": -0.0,
+						"translation.y": 856.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "public/javascripts/one-input-two-buttons.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1350,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								43,
-								43
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
 					"type": "text"
 				}
 			]
@@ -1158,7 +1122,7 @@
 	},
 	"output.find_results":
 	{
-		"height": 464.0
+		"height": 210.0
 	},
 	"output.unsaved_changes":
 	{
@@ -1177,6 +1141,22 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"ind",
+				"views\\index.ejs"
+			],
+			[
+				"routes",
+				"routes\\routes.js"
+			],
+			[
+				"inde",
+				"views\\index.ejs"
+			],
+			[
+				"st",
+				"public\\stylesheets\\style.css"
+			],
 			[
 				"pak",
 				"package.json"
@@ -1262,16 +1242,8 @@
 				"public\\stylesheets\\style.css"
 			],
 			[
-				"inde",
-				"views\\index.ejs"
-			],
-			[
 				"home",
 				"views\\components\\home.ejs"
-			],
-			[
-				"routes",
-				"routes\\routes.js"
 			],
 			[
 				"discussion",
@@ -1356,10 +1328,6 @@
 			[
 				"pro",
 				"views\\productionIndex.ejs"
-			],
-			[
-				"ind",
-				"views\\index.ejs"
 			],
 			[
 				"minif",
@@ -1610,10 +1578,6 @@
 				"util\\discussionHandler.js"
 			],
 			[
-				"st",
-				"public\\stylesheets\\style.css"
-			],
-			[
 				"bundl",
 				"public\\production\\javascripts\\bundle.min.js"
 			],
@@ -1700,6 +1664,10 @@
 		[
 			[
 				"",
+				"C:\\Users\\simon\\Documents\\Web Dev\\nemoo\\nemoo.sublime-project"
+			],
+			[
+				"ne",
 				"C:\\Users\\simon\\Documents\\Web Dev\\nemoo\\nemoo.sublime-project"
 			]
 		],

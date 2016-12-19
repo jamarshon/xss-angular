@@ -7,12 +7,12 @@
 
   <one-input-two-buttons 
   	input-text-key="serverTemplateUnparsedText" 
-  	input-text-model="serverTemplateUnparsedText"
+  	input-text-model="sharedDynamicData.serverTemplateUnparsedText"
 		hack-input-text="hackScriptText"
 		populate-button-label="Populate with Script Text"
 		submit-button-label="Save"
-		status-message="statusMessage"
-		is-dangerous="isDangerous"
+		status-message="sharedDynamicData.statusMessage"
+		is-dangerous="sharedDynamicData.isDangerous"
 		text-same-hack-label="Refresh page to see the hacker's effect"
 		text-different-hack-label="Refresh page to see input stored in db be rendered in the template"
 		start-timer="startTimer()"></one-input-two-buttons>

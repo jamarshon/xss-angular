@@ -1,13 +1,15 @@
-'use strict'
+'use strict';
 
-angular.module('XSSAngularApp', [])
-	.controller('MainCtrl', function($scope, $http, $compile, $timeout, $templateCache, $sce, $window, ResizeAndScrollService){
+angular.module('XSSAngularApp', ['templates'])
+	.controller('MainCtrl', ['$scope', '$http', '$compile', '$timeout', '$templateCache', '$sce', '$window', '$interval', 'ResizeAndScrollService',
+									function($scope, $http, $compile, $timeout, $templateCache, $sce, $window, $interval, ResizeAndScrollService){
 		var resizeAndScrollService = new ResizeAndScrollService($scope);
 		$window.hackMessage = 'You have been hacked!';
 
 		$scope.hackScriptText = '<script type="text/javascript">alert("You have been hacked!"); document.body.firstElementChild.className = 1;</script>';
 		$scope.hackSandBoxText = "{{(_=''.sub).call.call({}[$='constructor'].getOwnPropertyDescriptor(_.__proto__,$).value,0,'alert(hackMessage); document.body.firstElementChild.className = 1')()}}";
 		$scope.scrolledToPrevious = false;
+		$scope.intervals = [];
 
 		// Shared data between the ng-include which is dynamic
 		$scope.sharedDynamicData = {
@@ -58,9 +60,15 @@ angular.module('XSSAngularApp', [])
 		};
 
 		$scope.startTimer = function() {
-			$timeout(function(){
+			angular.forEach($scope.intervals, function(inteval){ $interval.cancel(interval); });
+			$scope.intervals.splice(0);
+
+			var currentInterval = $interval(function(){
 				$scope.sharedDynamicData.statusMessage = '';
+				$interval.cancel(currentInterval);
 			}, 5000);
+
+			$scope.intervals.push(currentInterval);
 		};
 
 		$scope.$watchCollection('sharedDynamicData', function(newVal, oldVal){
@@ -81,6 +89,6 @@ angular.module('XSSAngularApp', [])
 
 		resizeAndScrollService.bindScrollHander();
 		resizeAndScrollService.bindResizeHandlerAndExecute();
-	});
+	}]);
 	
 	

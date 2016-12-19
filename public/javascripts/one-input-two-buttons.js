@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 angular.module('XSSAngularApp')
 	.controller('OneInputTwoButtonsCtrl', function($scope, $http){

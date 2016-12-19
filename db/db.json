@@ -1,7 +1,7 @@
 {
     "db": {
         "serverTemplateUnparsedText": "",
-        "interpolationText": "",
+        "interpolationText": "a",
         "ngIncludeText": "b",
         "ngBindHtmlText": "a"
     }
