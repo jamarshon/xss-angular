@@ -1,11 +1,9 @@
 'use strict'
 
-angular.module('App', [])
-	.controller('Ctrl', function($scope, $http, $compile, $timeout, $templateCache, $sce, $window){
-		window.hackMessage = 'You have been hacked!';
-
-		var scrollKey = 'XSSAngularScrollTop';
-		var lastScrollTop = $window.sessionStorage.getItem(scrollKey);
+angular.module('XSSAngularApp', [])
+	.controller('MainCtrl', function($scope, $http, $compile, $timeout, $templateCache, $sce, $window, ResizeAndScrollService){
+		var resizeAndScrollService = new ResizeAndScrollService($scope);
+		$window.hackMessage = 'You have been hacked!';
 
 		$scope.hackScriptText = '<script type="text/javascript">alert("You have been hacked!"); document.body.firstElementChild.className = 1;</script>';
 		$scope.hackSandBoxText = "{{(_=''.sub).call.call({}[$='constructor'].getOwnPropertyDescriptor(_.__proto__,$).value,0,'alert(hackMessage); document.body.firstElementChild.className = 1')()}}";
@@ -54,53 +52,19 @@ angular.module('App', [])
 			}, 5000);
 		};
 
-		$scope.getDynamicAnimatedElements = function() {
-			var headerEl = document.getElementById('main-title-header');
-			var documentationContainerEl = document.getElementById('documentation-container');
-			var elementsToModifyClass = [headerEl, documentationContainerEl];
-			return angular.element(elementsToModifyClass);
-		};
-
-		// Hide the animatable items if resized to mobile
-		$scope.resizeHandler = function() {
-			var dummySizeIndicatorEl = document.getElementById('dummy-size-indicator');
-			$scope.isMobile = angular.element(dummySizeIndicatorEl).css('display') === 'none';
-			$scope.getDynamicAnimatedElements().toggleClass('animate-hidden', $scope.isMobile);
-			angular.element('body').toggleClass('is-mobile', $scope.isMobile);
-		};
-
-		// Hide the animatable items when scrolled far enough as well as save it to session storage
-		angular.element('#documentation-container').bind('scroll', function(){
-			var scrollTop = angular.element('#documentation-container').scrollTop();
-			$window.sessionStorage.setItem(scrollKey, scrollTop);
-
-			if($scope.isMobile) {
-				$scope.getDynamicAnimatedElements().toggleClass('animate-hidden', scrollTop > 60);
-			}
-		});
-
 		var unbindScrollWatcher = $scope.$watch(function(){
 			return angular.isDefined($scope.ngIncludeCompiled) && angular.isDefined($scope.ngBindHtmlFull);
 		}, function(newVal) {
 			if(newVal) {
-				angular.element('#documentation-container').scrollTop(lastScrollTop);
-				unbindScrollWatcher();
+				$timeout(function(){
+					resizeAndScrollService.scrollToLastScrollTop();
+					unbindScrollWatcher();
+				});
 			}
 		});
 
-		angular.element($window).bind('resize', $scope.resizeHandler);
-		$scope.resizeHandler();
-	})
-	.directive('safeCircle', function(){
-		return {
-			template: '<i class="fa fa-check-circle" aria-hidden="true" style="color: green;"></i>',
-			restrict: 'E'
-		};
-	})
-	.directive('dangerCircle', function(){
-		return {
-			template: '<i class="fa fa-times-circle" aria-hidden="true" style="color: red;"></i>',
-			restrict: 'E'
-		};
+		resizeAndScrollService.bindScrollHander();
+		resizeAndScrollService.bindResizeHandlerAndExecute();
 	});
+	
 	

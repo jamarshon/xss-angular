@@ -30,16 +30,20 @@ var databaseOperationFn = function(dataBasePath, dbOperationCallback, res) {
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-	databaseOperationFn(DB_PATH, function(obj){
-		var deferred = Q.defer();
-		res.render('index', obj.db);
-		deferred.resolve(null);
-		return deferred.promise;
-	}, res);
+	res.render('index');
 });
 
 router.get('/templates/:templateName', function(req, res, next) {
 	res.render('templates/' + req.params.templateName);
+});
+
+router.get('/serverTemplates/:templateName', function(req, res, next) {
+	databaseOperationFn(DB_PATH, function(obj){
+		var deferred = Q.defer();
+		res.render('serverTemplates/' + req.params.templateName, obj.db);
+		deferred.resolve(null);
+		return deferred.promise;
+	}, res);
 });
 
 router.get('/getDB', function(req, res, next) {

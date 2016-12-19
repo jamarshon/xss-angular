@@ -1,0 +1,22 @@
+<div id="server-side-rendering">
+  <h3>User Input Reflected in Server-Side Template without Parsing <danger-circle></danger-circle></h3>
+  <p style="margin-top: 12px;">The user input is sent back to the database where it will be persisted. When the page is accessed again,
+  	the server will inject the user input into the HTML before sending it to client which will allow the hacker to place any type of
+  	HTML/JS code into the DOM.</p>
+  <div style="font-size: 18px;"><code>&lt;p&gt;Server rendered: &lt;%-serverTemplateUnparsedText%&gt;&lt;/p&gt;</code></div>
+
+  <one-input-two-buttons 
+  	input-text-key="serverTemplateUnparsedText" 
+  	input-text-model="serverTemplateUnparsedText"
+		hack-input-text="hackScriptText"
+		populate-button-label="Populate with Script Text"
+		submit-button-label="Save"
+		status-message="statusMessage"
+		is-dangerous="isDangerous"
+		text-same-hack-label="Refresh page to see the hacker's effect"
+		text-different-hack-label="Refresh page to see input stored in db be rendered in the template"
+		start-timer="startTimer()"></one-input-two-buttons>
+
+  <p style="display: none"><%-serverTemplateUnparsedText%></p>
+  <div class="live" style="font-size: 18px;"><code>&lt;p&gt;Server rendered: <%=serverTemplateUnparsedText%>&lt;/p&gt;</code></div>
+</div>

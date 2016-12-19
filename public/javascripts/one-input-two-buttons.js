@@ -1,6 +1,6 @@
 'use strict'
 
-angular.module('App')
+angular.module('XSSAngularApp')
 	.controller('OneInputTwoButtonsCtrl', function($scope, $http){
 		var submitFn = function() {
 			var postData = {key: $scope.inputTextKey, value: $scope.inputTextModel };

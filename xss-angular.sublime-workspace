@@ -519,6 +519,49 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "public/javascripts/script.js",
+			"settings":
+			{
+				"buffer_size": 3643,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "routes/routes.js",
+			"settings":
+			{
+				"buffer_size": 2098,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/javascripts/status-indicator-directives.js",
+			"settings":
+			{
+				"buffer_size": 380,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "public/javascripts/one-input-two-buttons.js",
+			"settings":
+			{
+				"buffer_size": 1350,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -607,10 +650,18 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/simon/Documents/Web Dev/xss-angular"
+		"/C/Users/simon/Documents/Web Dev/xss-angular",
+		"/C/Users/simon/Documents/Web Dev/xss-angular/public",
+		"/C/Users/simon/Documents/Web Dev/xss-angular/public/javascripts",
+		"/C/Users/simon/Documents/Web Dev/xss-angular/routes",
+		"/C/Users/simon/Documents/Web Dev/xss-angular/views",
+		"/C/Users/simon/Documents/Web Dev/xss-angular/views/templates"
 	],
 	"file_history":
 	[
+		"/C/Users/simon/Documents/Web Dev/xss-angular/views/serverTemplates/server-side-rendering-template.ejs",
+		"/C/Users/simon/Documents/Web Dev/xss-angular/views/index.ejs",
+		"/C/Users/simon/AppData/Local/Temp/7zOCA45.tmp/style.css",
 		"/C/Users/simon/Documents/Web Dev/nemoo/views/components/messageInput.ejs",
 		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/exploreCtrl.js",
 		"/C/Users/simon/Documents/Web Dev/nemoo/views/components/explore.ejs",
@@ -735,14 +786,11 @@
 		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/ga.js",
 		"/C/Users/simon/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/C/Users/simon/Documents/Web Dev/nemoo/public/production/javascripts/header.js",
-		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/searchBox.js",
-		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/script.js",
-		"/C/Users/simon/Documents/Web Dev/nemoo/public/production/javascripts/messageInput.js",
-		"/C/Users/simon/Documents/Web Dev/nemoo/public/production/javascripts/authenticationDialog.js"
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/searchBox.js"
 	],
 	"find":
 	{
-		"height": 26.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -769,6 +817,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			".",
 			"nodemon",
 			"quick",
 			"el",
@@ -895,8 +944,7 @@
 			"generateAnonUserCat",
 			".val",
 			"options.text",
-			"options",
-			"unfocus"
+			"options"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -924,8 +972,152 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "public/javascripts/script.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3643,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								949,
+								949
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": -0.0,
+						"translation.y": 1350.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"default_dir": "C:\\Users\\simon\\Documents\\Web Dev\\xss-angular\\public\\javascripts\\services",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "routes/routes.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2098,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1140,
+								1140
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 509.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "public/javascripts/status-indicator-directives.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 380,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								250,
+								250
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "public/javascripts/one-input-two-buttons.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1350,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								43,
+								43
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -1508,7 +1700,7 @@
 		[
 			[
 				"",
-				"C:\\Users\\simon\\Documents\\GitHub\\leetcode\\leetcode.sublime-project"
+				"C:\\Users\\simon\\Documents\\Web Dev\\nemoo\\nemoo.sublime-project"
 			]
 		],
 		"width": 526.0

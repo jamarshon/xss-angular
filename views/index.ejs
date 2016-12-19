@@ -23,8 +23,10 @@
 	<link rel="stylesheet" href="/stylesheets/style.css">
 	<script src="/javascripts/script.js"></script>
 	<script src="/javascripts/one-input-two-buttons.js"></script>
+	<script src="/javascripts/status-indicator-directives.js"></script>
+	<script src="/javascripts/services/resize-and-scroll-service.js"></script>
 </head>
-<body ng-app="App" ng-controller="Ctrl" style="overflow: hidden;" class="ng-cloak">
+<body ng-app="XSSAngularApp" ng-controller="MainCtrl" style="overflow: hidden;" class="ng-cloak">
 	<div id="dummy-hacked-indicator"></div>
 	<div id="dummy-size-indicator" class="hidden-xs"></div>
 	<div class="container">
@@ -46,34 +48,12 @@
 		<div class="container">
 	    <div class="container">
 		    <div ng-include="'/templates/introduction-template.ejs'"></div>
+		    <div ng-include="'/serverTemplates/server-side-rendering-template.ejs'"></div>
 
-		    <div id="server-side-rendering">
-		        <h3>User Input Reflected in Server-Side Template without Parsing <danger-circle></danger-circle></h3>
-		        <p style="margin-top: 12px;">The user input is sent back to the database where it will be persisted. When the page is accessed again,
-		        	the server will inject the user input into the HTML before sending it to client which will allow the hacker to place any type of
-		        	HTML/JS code into the DOM.</p>
-		        <div style="font-size: 18px;"><code>&lt;p&gt;Server rendered: &lt;%-serverTemplateUnparsedText%&gt;&lt;/p&gt;</code></div>
-
-			    <one-input-two-buttons 
-			    	input-text-key="serverTemplateUnparsedText" 
-			    	input-text-model="serverTemplateUnparsedText"
-					hack-input-text="hackScriptText"
-					populate-button-label="Populate with Script Text"
-					submit-button-label="Save"
-					status-message="statusMessage"
-					is-dangerous="isDangerous"
-					text-same-hack-label="Refresh page to see the hacker's effect"
-					text-different-hack-label="Refresh page to see input stored in db be rendered in the template"
-					start-timer="startTimer()"></one-input-two-buttons>
-
-			    <p style="display: none"><%-serverTemplateUnparsedText%></p>
-			    <div class="live" style="font-size: 18px;"><code>&lt;p&gt;Server rendered: <%=serverTemplateUnparsedText%>&lt;/p&gt;</code></div>
-		    </div>
-
-		    <div ng-include="'/templates/angular-0.ejs'"></div>
-		    <div ng-include="'/templates/angular-1.ejs'"></div>
-		    <div ng-include="'/templates/angular-2.ejs'"></div>
-		    <div ng-include="'/templates/angular-3.ejs'"></div>
+		    <div ng-include="'/templates/angular-0-template.ejs'"></div>
+		    <div ng-include="'/templates/angular-1-template.ejs'"></div>
+		    <div ng-include="'/templates/angular-2-template.ejs'"></div>
+		    <div ng-include="'/templates/angular-3-template.ejs'"></div>
 	    </div>
 	    </div>
 	</div>
