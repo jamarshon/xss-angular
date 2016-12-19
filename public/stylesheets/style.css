@@ -1,3 +1,20 @@
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-direction-row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 .tab-1 {
 	padding-left: 2em;
 }
@@ -6,7 +23,62 @@ h3 {
 	margin-top: 28px;
 }
 
+code {
+	white-space: nowrap;
+}
+
 .live > code {
     background-color: #96b4ed;
     color: white;
+}
+
+#main-title-header {
+    -webkit-transition: max-height 600ms ease-out, -webkit-transform 600ms ease-out;
+    transition: max-height 600ms ease-out, -webkit-transform 600ms ease-out;
+    transition: max-height 600ms ease-out, transform 600ms ease-out;
+    transition: max-height 600ms ease-out, transform 600ms ease-out, -webkit-transform 600ms ease-out;
+    overflow: hidden;
+    max-height: 100px;
+}
+
+#main-title-header.animate-hidden {
+    -webkit-transform: translateY(-60px);
+            transform: translateY(-60px);
+	max-height: 0px; 
+}
+
+#documentation-container {
+    -webkit-transition: max-height 100ms ease-out;
+    transition: max-height 100ms ease-out;
+    overflow: hidden;
+    max-height: calc(100vh - 100px);
+}
+
+#documentation-container.animate-hidden {
+	max-height: calc(100vh - 35px);
+}
+
+.one-input-two-buttons > input {
+	margin-top: 4px;
+	margin-bottom: 4px;
+	width: 100%;
+}
+
+.one-input-two-buttons > button {
+	margin-top: 4px;
+	margin-bottom: 4px;
+	margin-left: 12px;
+}
+
+body.is-mobile .one-input-two-buttons {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; 
+  -webkit-box-orient: horizontal; 
+  -webkit-box-direction: reverse; 
+      -ms-flex-direction: row-reverse; 
+          flex-direction: row-reverse;
+}
+
+.one-input-two-buttons {
+	padding: 8px 12px;
 }

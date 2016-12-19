@@ -38,6 +38,10 @@ router.get('/', function(req, res, next) {
 	}, res);
 });
 
+router.get('/templates/:templateName', function(req, res, next) {
+	res.render('templates/' + req.params.templateName);
+});
+
 router.get('/getDB', function(req, res, next) {
 	databaseOperationFn(DB_PATH, function(obj){
 		var deferred = Q.defer();

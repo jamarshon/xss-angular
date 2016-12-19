@@ -1,0 +1,32 @@
+<div id="angular-1">
+    <h3>Angular Binding after Constructing User Input <danger-circle></danger-circle></h3>
+    <p style="margin-top: 12px;">In this case, the user input has been taken and using some DOM manipulation such as jQuery or jqLite
+    	the raw user input has been injected into the HTML element that will be rendered. <b>Avoid creating your element or modifying the 
+    	attributes of an existing element with values taken from user input</b>. Notice how the element that is compiled has className being directly
+    	user input so it does not get the protection of interpolation mentioned before. The <b>$compile</b> function causes the JS to execute 
+    	which could be called natively (when a DOM element is loaded and Angular needs to bind to the HTML to make it dynamic) or in the 
+    	code of the application which calls $compile for whatever reason.</p>
+	<div style="font-size: 18px;">
+			<code>$scope.createElement = function() { </code><br/>
+			<code class="tab-1">var element = document.createElement('div');</code><br/>
+			<code class="tab-1">element.className = $scope.constructionText;</code><br/>
+			<code class="tab-1">angular.element('#construction-text-container').append(element);</code><br/>
+			<code class="tab-1">$compile(element)($scope);</code><br/>
+			<code>};</code><br/>
+			<code>// dangerous element could be compiled here <span ng-non-bindable>&lt;div class=&quot;{{(_=''.sub).call... 'alert(hackMessage)')()}} ng-scope&quot;&gt;&lt;/div&gt;</span></code><br/>
+	</div>
+
+    <one-input-two-buttons 
+    	input-text-key="constructionText" 
+    	input-text-model="constructionText"
+		hack-input-text="hackSandBoxText"
+		populate-button-label="Populate with Sandbox Escape Text"
+		submit-button-label="Create Element"
+		is-inherited="true"
+		inherited-submit-fn="createElement()"></one-input-two-buttons>
+
+    <div id="construction-text-container" style="display: none;"></div>
+    <div style="margin-top: 12px; font-size: 18px;" ng-if="a1Items.length">
+    	<div ng-repeat="item in a1Items track by $index" class="live"><code>{{item}}</code></div>
+    </div>
+</div>

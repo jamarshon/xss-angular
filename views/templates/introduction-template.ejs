@@ -1,0 +1,17 @@
+<div id="introduction">
+	<h3>Introduction</h3>
+    <p style="margin-top: 12px;">XSS or cross-site scripting is a security flaw that exists when an attacker can execute JavaScript
+    	on another user's browser. This is a serious concern because normally only the website's code and possibly the user's code will
+    	be running on a page (no code from an additional third-party). XSS enables attackers to inject client-side scripts into web pages 
+    	viewed by other users. A cross-site scripting  vulnerability may be used by attackers to gain access to other users' credentials or to submit requests on their behalf.</p>
+    <p style="margin-top: 12px;">This issue can usually occur in two ways in an Angular application: server template of user inputs or 
+    	through clever manipulation of the Angular's compilation/binding of the DOM. For the latter case, there is a sandbox in place
+    	that prevents execution of unsafe JavaScript but there are ways to bypass this. The code to bypass is dependent on the Angular 
+    	version as seen here (http://blog.portswigger.net/2016/01/xss-without-html-client-side-template.html) but the one for Angular 1.2.16  will be used in this demo:<p>
+    <div style="margin-top: 12px; font-size: 18px;">
+    	<code ng-non-bindable>{{(_=''.sub).call.call({}[$='constructor'].getOwnPropertyDescriptor(_.__proto__,$).value,0,'alert(hackMessage)')()}}</code>
+    </div>
+    <p style="margin-top: 12px;">In this demo, refreshing the page signifies a new user meaning that if any JavaScript executes from the
+    	previous session, then it shows the website has been hacked as an attacker has executed JavaScript on a clean site / other user.
+    	This can be identified by an alert message on refresh <i class="fa fa-smile-o" aria-hidden="true"></i> .<p>
+</div>

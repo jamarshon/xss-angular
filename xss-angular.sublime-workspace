@@ -1,0 +1,1538 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"dis",
+				"discussion-youtube"
+			],
+			[
+				"di",
+				"dialog"
+			],
+			[
+				"get",
+				"getUUID"
+			],
+			[
+				"yout",
+				"youtubeHandler"
+			],
+			[
+				"dum",
+				"dummy-explore"
+			],
+			[
+				"row",
+				"rowCount"
+			],
+			[
+				"dumm",
+				"dummyItemEl"
+			],
+			[
+				"ex",
+				"explorePageEl"
+			],
+			[
+				"sp",
+				"space-between"
+			],
+			[
+				"fle",
+				"flex-wrap"
+			],
+			[
+				"pos",
+				"postData"
+			],
+			[
+				"d",
+				"description"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"trans",
+				"transform"
+			],
+			[
+				"paddin",
+				"padding-left"
+			],
+			[
+				"rou",
+				"roundedHeights"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"ma",
+				"maxTiles"
+			],
+			[
+				"rend",
+				"renderIndex"
+			],
+			[
+				"cont",
+				"controllerAs"
+			],
+			[
+				"templ",
+				"templateUrl"
+			],
+			[
+				"is",
+				"isTempImage"
+			],
+			[
+				"fi",
+				"firstItem"
+			],
+			[
+				"pre",
+				"previewImage"
+			],
+			[
+				"file",
+				"fileInput"
+			],
+			[
+				"upload",
+				"uploadTempImage"
+			],
+			[
+				"backgroud",
+				"background-color"
+			],
+			[
+				"in",
+				"internalFiles"
+			],
+			[
+				"state",
+				"stateService"
+			],
+			[
+				"stat",
+				"stateService"
+			],
+			[
+				"paddi",
+				"padding-right"
+			],
+			[
+				"transform",
+				"transform-origin"
+			],
+			[
+				"tren",
+				"trendingDiscussions"
+			],
+			[
+				"on",
+				"onShowHandler"
+			],
+			[
+				"at",
+				"atEnd"
+			],
+			[
+				"ke",
+				"keydown"
+			],
+			[
+				"kep",
+				"keypress"
+			],
+			[
+				"new",
+				"newVal"
+			],
+			[
+				"selec",
+				"getSelection"
+			],
+			[
+				"create",
+				"createRange"
+			],
+			[
+				"node",
+				"node2"
+			],
+			[
+				"no",
+				"noSelectionCallback"
+			],
+			[
+				"emot",
+				"emoticonTitle"
+			],
+			[
+				"em",
+				"emoticonClass"
+			],
+			[
+				"emotic",
+				"emoticonStr"
+			],
+			[
+				"nod",
+				"nodeStr"
+			],
+			[
+				"mes",
+				"messageBox"
+			],
+			[
+				"o",
+				"optimizationService"
+			],
+			[
+				"com",
+				"componentsPath"
+			],
+			[
+				"pa",
+				"pageKey"
+			],
+			[
+				"ret",
+				"retStr"
+			],
+			[
+				"add",
+				"additionalOptions"
+			],
+			[
+				"tog",
+				"toggleClass"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"messa",
+				"messageAddCtrl"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"sym",
+				"symbolsEmoji"
+			],
+			[
+				"enc",
+				"encodedMessage"
+			],
+			[
+				"mess",
+				"messageObject"
+			],
+			[
+				"ele",
+				"elementLeft"
+			],
+			[
+				"max-",
+				"max-height"
+			],
+			[
+				"emo",
+				"emojiCheatSheet"
+			],
+			[
+				"ca",
+				"cacheTime"
+			],
+			[
+				"js",
+				"jsPath"
+			],
+			[
+				"page",
+				"pageName"
+			],
+			[
+				"message",
+				"messageCtrl"
+			],
+			[
+				"min",
+				"minfiyImg"
+			],
+			[
+				"md",
+				"mdMedia"
+			],
+			[
+				"globa",
+				"globalDiscussion"
+			],
+			[
+				"gol",
+				"globalDiscussion"
+			],
+			[
+				"text",
+				"textarea\tTag"
+			],
+			[
+				"scro",
+				"scrollContainer"
+			],
+			[
+				"scroll",
+				"scrollBottom"
+			],
+			[
+				"me",
+				"messageSchema"
+			],
+			[
+				"pro",
+				"profileImg"
+			],
+			[
+				"authen",
+				"authenticated"
+			],
+			[
+				"form",
+				"formData"
+			],
+			[
+				"authenticat",
+				"isAuthenticated"
+			],
+			[
+				"user",
+				"userList"
+			],
+			[
+				"_",
+				"_lastActive"
+			],
+			[
+				"Loa",
+				"LoadingPage"
+			],
+			[
+				"arr",
+				"arrOfObj"
+			],
+			[
+				"pad",
+				"padding-bottom"
+			],
+			[
+				"calcul",
+				"calculateMarkup"
+			],
+			[
+				"rawPrice",
+				"rawPriceAll"
+			],
+			[
+				"over",
+				"overflow-y"
+			],
+			[
+				"spl",
+				"splitArr"
+			],
+			[
+				"overflow-",
+				"overflow-y"
+			],
+			[
+				"use",
+				"userName"
+			],
+			[
+				"price",
+				"pricePromise"
+			],
+			[
+				"style",
+				"styleCode"
+			],
+			[
+				"j",
+				"jValue"
+			],
+			[
+				"sta",
+				"startIndex"
+			],
+			[
+				"n2",
+				"n2Val"
+			],
+			[
+				"b",
+				"bValue"
+			],
+			[
+				"a",
+				"aValue"
+			],
+			[
+				"en",
+				"enclosedElement"
+			],
+			[
+				"flex",
+				"flex-direction"
+			],
+			[
+				"game",
+				"gamescreen"
+			],
+			[
+				"flatt",
+				"flattenHelper"
+			],
+			[
+				"curr",
+				"currRow"
+			],
+			[
+				"cur",
+				"currRow"
+			],
+			[
+				"left",
+				"leftCell"
+			],
+			[
+				"pi",
+				"pivotIndex"
+			],
+			[
+				"pivo",
+				"pivotInd"
+			],
+			[
+				"mid",
+				"midIndex"
+			],
+			[
+				"i",
+				"iLen"
+			],
+			[
+				"per",
+				"permutationHelper"
+			],
+			[
+				"binar",
+				"binarySearchHelper"
+			],
+			[
+				"qi",
+				"quickSortHelper"
+			],
+			[
+				"pivot",
+				"pivotInd"
+			],
+			[
+				"piv",
+				"pivotInd"
+			],
+			[
+				"asc",
+				"asciiStr"
+			],
+			[
+				"find",
+				"findEncodings"
+			],
+			[
+				"parent",
+				"parentNode"
+			],
+			[
+				"merge",
+				"mergeSort"
+			],
+			[
+				"proto",
+				"prototype"
+			],
+			[
+				"A",
+				"AVLTree"
+			],
+			[
+				"mer",
+				"mergeSort"
+			],
+			[
+				"rotArr",
+				"rotArrRow"
+			],
+			[
+				"quickSor",
+				"quickSortHelper"
+			],
+			[
+				"par",
+				"parseValue"
+			],
+			[
+				"value",
+				"valuesLen"
+			],
+			[
+				"Ut",
+				"utilHelper"
+			],
+			[
+				"transit",
+				"transition-duration"
+			],
+			[
+				"inline",
+				"inline-block"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/User/CustomC++Build.sublime-build",
+					""
+				],
+				[
+					"Packages/User/CustomC++Build.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/User/CustomC++Build.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 360.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 344.0
+	},
+	"console":
+	{
+		"height": 153.0,
+		"history":
+		[
+			"subl",
+			"subl -v",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/simon/Documents/Web Dev/xss-angular"
+	],
+	"file_history":
+	[
+		"/C/Users/simon/Documents/Web Dev/nemoo/views/components/messageInput.ejs",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/exploreCtrl.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/views/components/explore.ejs",
+		"/C/Users/simon/Documents/Web Dev/nemoo/views/components/discussion.ejs",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/stylesheets/style.css",
+		"/C/Users/simon/Documents/Web Dev/nemoo/util/discussionHandler.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/util/util.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/production.bat",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/dialogs/discussionDialogCtrl.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/initApp.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/util/discussionRenderer.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/discussionCtrl.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/init.bat",
+		"/C/Users/simon/Documents/Web Dev/nemoo/gulpfile.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/app/models/discussionModel.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/routes/discussionRoutes.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/views/components/createDiscussionDialog.ejs",
+		"/C/Users/simon/Documents/Web Dev/nemoo/views/index.ejs",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/panels/panelCtrl.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/messagebox/messageInputCtrl.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/messagebox/messageAdditionalOptionsCtrl.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/views/components/home.ejs",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/headerCtrl.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/routes/routes.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/services/discussionCacheService.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/views/components/header.ejs",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/dialogs/authenticationDialogCtrl.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/mainCtrl.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/app.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/app/models/userModel.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/routes/imageRoutes.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/README.txt",
+		"/C/Users/simon/Documents/Web Dev/nemoo/util/imageHandler.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/.env",
+		"/C/Users/simon/Documents/Web Dev/nemoo/bin/www",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/services/optimizationService.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/views/components/messageAdditionalOptions.ejs",
+		"/C/Users/simon/Documents/Web Dev/nemoo/views/productionIndex.ejs",
+		"/C/Users/simon/Documents/Web Dev/nemoo/views/components/loginDialog.ejs",
+		"/C/Users/simon/Documents/Web Dev/nemoo/scripts/minify.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/production/javascripts/templates.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/views/components/userNavPanel.ejs",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/panels/userNavPanelCtrl.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/templates.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/jquery-webui.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/routes/passportRoutes.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/views/components/panel.ejs",
+		"/C/Users/simon/Documents/Web Dev/nemoo/views/components/topDiscussions.ejs",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/messagebox/additionalOptionsDropdownCtrl.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/views/components/dropdownSelect.ejs",
+		"/C/Users/simon/Documents/Web Dev/nemoo/views/components/additionalOptionsDropdown.ejs",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/panels/searchBoxCtrl.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/messagebox/angularDropdown.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/views/components/dropdownSelectItem.ejs",
+		"/C/Users/simon/Documents/Web Dev/nemoo/views/components/searchBox.ejs",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/services/animationService.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/services/cursorService.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/config/auth.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/config/database.js",
+		"/C/Users/simon/AppData/Local/Temp/7zO79A1.tmp/filedrop.css",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/stylesheets/filedrop.css",
+		"/C/Users/simon/AppData/Local/Temp/7zEDDC0.tmp/filedrop.css",
+		"/C/Users/simon/AppData/Local/Temp/7zECEBB.tmp/filedrop-min.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/dropzone2.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/dropzone.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/views/components/signup.ejs",
+		"/C/Users/simon/Documents/Web Dev/nemoo/views/components/login.ejs",
+		"/C/Users/simon/Documents/Web Dev/nemoo/config/passport.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/util/appHandler.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/stylesheets/emojify-small.css",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/production/stylesheets/emojify-small.min.css",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/production/javascripts/bundle.min.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/panelCtrl.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/angularDropdown.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/stylesheets/angular-dropdowns.min.css",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/messageInputCtrl.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/package.json",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/discussionDialogCtrl.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/userNavPanelCtrl.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/stateService.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/stylesheets/test.css",
+		"/C/Users/simon/Documents/Web Dev/nemoo/views/components/production/topDiscussions.ejs",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/libs/angular-dropdowns.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/topDiscussionsCtrl.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/authenticationDialogCtrl.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/views/components/production/createDiscussionDialog.ejs",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/searchBoxCtrl.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/messageAdditionalOptionsCtrl.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/views/components/production/discussion.ejs",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/optimizationService.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/production/javascripts/libs/angular-dropdowns.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/additionalOptionsDropdownCtrl.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/libs/angular-dropdowns.min.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/views/components/production/production",
+		"/C/Users/simon/Documents/Web Dev/nemoo/scripts/reduce-emoji.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/stylesheets/emojify-small.min.css",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/stylesheets/emojify.min.css",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/toastManagerService.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/loaderAnimationService.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/nemoo.sublime-workspace",
+		"/C/Users/simon/Documents/Web Dev/nemoo/views/components/production/additionalOptionsDropdown.ejs",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/emoticonConstants.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/views/components/emoji-content.ejs",
+		"/C/Users/simon/Documents/Web Dev/nemoo/scripts/emoji-cheatsheet.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/scripts/raw-css-emoticons.txt",
+		"/C/Users/simon/Documents/Web Dev/nemoo/.gitignore",
+		"/C/Users/simon/Documents/Web Dev/nemoo/scripts/generateEmoji.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/scripts/emoji-cheatsheet.txt",
+		"/C/Users/simon/Documents/Web Dev/nemoo/test.txt",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/images/anonymous/generator.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/scripts/test.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/test/authenticationDialogCtrl.min.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/views/components/loader.ejs",
+		"/C/Users/simon/Documents/Web Dev/nemoo/views/loader.ejs",
+		"/C/Users/simon/AppData/Local/Temp/7zO8DDB.tmp/index.ejs",
+		"/C/Users/simon/AppData/Local/Temp/7zO2B67.tmp/loaderAnimationService.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/discussionDialogCtrl",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/header.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/authenticationDialog.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/panel.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/messageInput.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/ga.js",
+		"/C/Users/simon/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/production/javascripts/header.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/searchBox.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/javascripts/script.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/production/javascripts/messageInput.js",
+		"/C/Users/simon/Documents/Web Dev/nemoo/public/production/javascripts/authenticationDialog.js"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 96.0,
+		"where_history":
+		[
+			"C:\\Users\\simon\\Documents\\Web Dev\\nemoo, *.js",
+			"C:\\Users\\simon\\Documents\\Web Dev\\nemoo, *.ejs",
+			"C:\\Users\\simon\\Documents\\Web Dev\\nemoo, *.js",
+			"C:\\Users\\simon\\Documents\\Web Dev\\nemoo, *.ejs",
+			"C:\\Users\\simon\\Documents\\Web Dev\\nemoo, *.js",
+			"",
+			"C:\\Users\\simon\\Documents\\Web Dev\\frex-backend\\frex-backend\\frontend",
+			"C:\\Users\\simon\\Dropbox\\WATERLOO\\Programming",
+			"C:\\Users\\simon\\Documents\\Web Dev\\jamarshon.appspot.com\\",
+			"C:\\Users\\simon\\Documents\\Web Dev\\jamarshon.appspot.com\\static\\styles\\",
+			"C:\\Users\\simon\\Documents\\Web Dev\\jamarshon.appspot.com\\static\\stylespre#sour\\",
+			"C:\\Users\\simon\\Documents\\Web Dev\\jamarshon.appspot.com\\static\\scripts\\",
+			"C:\\Users\\simon\\Documents\\Web Dev\\jamarshon.appspot.com\\static\\scripts\\modules"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"nodemon",
+			"quick",
+			"el",
+			"$scope.$wa",
+			"destroyHandler",
+			"toastMan",
+			"toastman",
+			"tran",
+			"font",
+			"getHeight",
+			"html",
+			"ng-src",
+			"$http.get",
+			"rootScope",
+			"404",
+			"descrip",
+			"'Animals'",
+			"_abstractTopSevenSearch",
+			"discussionCacheService",
+			"sizeHandler",
+			"$watch",
+			"style=\"float: right; display: inline-block; max-height: 100%; width: auto; height: auto; margin-left: 20px; margin-right: 20px;\">",
+			"float: right; display: inline-block; max-height: 100%; ",
+			" Welcome to Nemoo, a friendly and vibrant community where you can interact anonymously or using an account\n\t  with strangers and friends. Similar to a real-time Reddit, you can create discussions about topics that you\n\t  are interested in and quickly message others with very little wait time. <br/><br/>\n\t  If you enjoy using this site, please share it and like us on <a href=\"https://www.facebook.com/nemoo27\"> Facebook</a>. Keep on exploring!\n\t</p>",
+			"style=\"font-weight: 300; line-height: 1.4; font-size: 20px; padding-left: 20px; text-align: justify;\"",
+			"\t<p hide-gt-xs style=\"font-weight: 300; line-height: 1.4; font-size: 20px; padding-left: 20px; text-align: justify;\">\n",
+			"\t<p hide-gt-xs style=\"font-weight: 300; line-height: 1.4; font-size: 20px; padding-left: 20px; text-align: justify;\">\nmyna",
+			"getTopDiscussions",
+			"oneDay",
+			"FACEBOOK_ID",
+			"'error'",
+			"uploadTempImage",
+			"quickMessageHandler",
+			"fileUpload",
+			"focus.messagebox",
+			"showmenu",
+			".file",
+			"fileInput",
+			"calc",
+			"_.",
+			".forEach",
+			"angular.element",
+			"zone",
+			"ng-style",
+			"toastManager.",
+			"addToFavorite",
+			"dlgCtrl",
+			".hardRedirect",
+			".logout =",
+			"hardred",
+			"setContentASync",
+			".redirect",
+			"hardredirect",
+			"/logout",
+			".success",
+			"/logout",
+			"ng-",
+			"ctrl.",
+			"pageKey",
+			"::",
+			"dropdowndisabled",
+			"dropdownDisabled",
+			"ng-style",
+			"ng-class",
+			"templateUrl",
+			"dropdownSelect.html",
+			"$scope.$watch",
+			"/logout",
+			"ng-",
+			"ng-repeat",
+			"ng",
+			"ng-bind",
+			"currentNumOnline",
+			".dropdown",
+			".active",
+			".aactive",
+			"discussionCacheService",
+			"data =",
+			"lastPrerenderedEl",
+			"$scope.$apply",
+			"quickMessageHandler",
+			"this",
+			"that",
+			"scope:",
+			"scope",
+			"nemoo-message-input",
+			"mouseActive",
+			"$scope.",
+			"toggleDropDown",
+			"submitFile",
+			"loaderAnimation",
+			"isFocused",
+			"insertAtCursor",
+			"emoticonHandler",
+			".send =",
+			"error",
+			"MONGODB_URI",
+			"FACEBOOK_SECRET",
+			"FACEBOOK_ID",
+			"facebookAuth",
+			"FACEBOOK_ID",
+			"emojify",
+			"showSimpleWithAction",
+			"toastManager",
+			"toastManagerService",
+			"toastService",
+			"optimizationService",
+			"pageKey",
+			"ng-style",
+			"loggedin",
+			"  \nitem.",
+			"item.",
+			"refreshPage",
+			"isLoggedIn",
+			"_state",
+			"hardredirect",
+			"hardRedirect",
+			"setProperties",
+			"cacheFactory",
+			"404",
+			"40",
+			"generateAnonUser",
+			"Util.",
+			"generateAnonUserCat",
+			".val",
+			"options.text",
+			"options",
+			"unfocus"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			".$el",
+			"right",
+			"left",
+			"<span class=\"red keyword\">return</span>",
+			"<span class=\"red keyword\">new</span>",
+			"<span class=\"blue keyword\">var</span>",
+			"<span class=\"blue keyword\">",
+			"class=\"jamarshon-tile hvr-grow\"",
+			"/downloads/p0/",
+			"class=\"jamarshon-tile\" id=\"tile-\""
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 228.0
+	},
+	"output.find_results":
+	{
+		"height": 464.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 69.0
+	},
+	"pinned_build_system": "",
+	"project": "xss-angular.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"pak",
+				"package.json"
+			],
+			[
+				"init",
+				"init.bat"
+			],
+			[
+				"git",
+				".gitignore"
+			],
+			[
+				"d.ejs",
+				"views\\components\\discussion.ejs"
+			],
+			[
+				"minp.",
+				"views\\components\\messageInput.ejs"
+			],
+			[
+				"discussion.",
+				"views\\components\\discussion.ejs"
+			],
+			[
+				"disct",
+				"public\\javascripts\\discussionCtrl.js"
+			],
+			[
+				"mess",
+				"public\\javascripts\\messagebox\\messageInputCtrl.js"
+			],
+			[
+				"dd",
+				"public\\javascripts\\dialogs\\discussionDialogCtrl.js"
+			],
+			[
+				"ini",
+				"init.bat"
+			],
+			[
+				"prod",
+				"production.bat"
+			],
+			[
+				"gul",
+				"gulpfile.js"
+			],
+			[
+				"produc",
+				"production.bat"
+			],
+			[
+				"discussionmode",
+				"app\\models\\discussionModel.js"
+			],
+			[
+				"util",
+				"util\\util.js"
+			],
+			[
+				"drend",
+				"util\\discussionRenderer.js"
+			],
+			[
+				"dc",
+				"public\\javascripts\\discussionCtrl.js"
+			],
+			[
+				"dhan",
+				"util\\discussionHandler.js"
+			],
+			[
+				"create",
+				"views\\components\\createDiscussionDialog.ejs"
+			],
+			[
+				"discussionhand",
+				"util\\discussionHandler.js"
+			],
+			[
+				"style",
+				"public\\stylesheets\\style.css"
+			],
+			[
+				"inde",
+				"views\\index.ejs"
+			],
+			[
+				"home",
+				"views\\components\\home.ejs"
+			],
+			[
+				"routes",
+				"routes\\routes.js"
+			],
+			[
+				"discussion",
+				"routes\\discussionRoutes.js"
+			],
+			[
+				"discussionha",
+				"util\\discussionHandler.js"
+			],
+			[
+				"index.",
+				"views\\index.ejs"
+			],
+			[
+				"discus",
+				"public\\javascripts\\services\\discussionCacheService.js"
+			],
+			[
+				"header",
+				"views\\components\\header.ejs"
+			],
+			[
+				"main",
+				"public\\javascripts\\mainCtrl.js"
+			],
+			[
+				"mao",
+				"public\\javascripts\\messagebox\\messageAdditionalOptionsCtrl.js"
+			],
+			[
+				"dis",
+				"routes\\discussionRoutes.js"
+			],
+			[
+				"user",
+				"app\\models\\userModel.js"
+			],
+			[
+				"dih",
+				"util\\discussionHandler.js"
+			],
+			[
+				"app",
+				"app.js"
+			],
+			[
+				"imageh",
+				"util\\imageHandler.js"
+			],
+			[
+				"d.ej",
+				"views\\components\\discussion.ejs"
+			],
+			[
+				"m",
+				"public\\javascripts\\messagebox\\messageInputCtrl.js"
+			],
+			[
+				"ro",
+				"routes\\routes.js"
+			],
+			[
+				"dim",
+				"app\\models\\discussionModel.js"
+			],
+			[
+				"maoc",
+				"public\\javascripts\\messagebox\\messageAdditionalOptionsCtrl.js"
+			],
+			[
+				"head",
+				"views\\components\\header.ejs"
+			],
+			[
+				"op",
+				"public\\javascripts\\services\\optimizationService.js"
+			],
+			[
+				"sytle",
+				"public\\stylesheets\\style.css"
+			],
+			[
+				"pro",
+				"views\\productionIndex.ejs"
+			],
+			[
+				"ind",
+				"views\\index.ejs"
+			],
+			[
+				"minif",
+				"scripts\\minify.js"
+			],
+			[
+				"us",
+				"views\\components\\userNavPanel.ejs"
+			],
+			[
+				"login",
+				"views\\components\\loginDialog.ejs"
+			],
+			[
+				"logind",
+				"views\\components\\loginDialog.ejs"
+			],
+			[
+				"hc",
+				"public\\javascripts\\headerCtrl.js"
+			],
+			[
+				"authe",
+				"public\\javascripts\\dialogs\\authenticationDialogCtrl.js"
+			],
+			[
+				"hea",
+				"views\\components\\header.ejs"
+			],
+			[
+				"headc",
+				"public\\javascripts\\headerCtrl.js"
+			],
+			[
+				"os",
+				"public\\javascripts\\services\\optimizationService.js"
+			],
+			[
+				"una",
+				"public\\javascripts\\panels\\userNavPanelCtrl.js"
+			],
+			[
+				"passp",
+				"routes\\passportRoutes.js"
+			],
+			[
+				"panelct",
+				"public\\javascripts\\panels\\panelCtrl.js"
+			],
+			[
+				"usernavc",
+				"public\\javascripts\\panels\\userNavPanelCtrl.js"
+			],
+			[
+				"usernav",
+				"views\\components\\userNavPanel.ejs"
+			],
+			[
+				"panelc",
+				"public\\javascripts\\panels\\panelCtrl.js"
+			],
+			[
+				"to",
+				"views\\components\\topDiscussions.ejs"
+			],
+			[
+				"panel",
+				"views\\components\\panel.ejs"
+			],
+			[
+				"dropd",
+				"views\\components\\dropdownSelect.ejs"
+			],
+			[
+				"aodc",
+				"public\\javascripts\\messagebox\\additionalOptionsDropdownCtrl.js"
+			],
+			[
+				"aod",
+				"views\\components\\additionalOptionsDropdown.ejs"
+			],
+			[
+				"searc",
+				"public\\javascripts\\panels\\searchBoxCtrl.js"
+			],
+			[
+				"angula",
+				"public\\javascripts\\messagebox\\angularDropdown.js"
+			],
+			[
+				"in",
+				"views\\index.ejs"
+			],
+			[
+				"d.e",
+				"views\\components\\discussion.ejs"
+			],
+			[
+				"message",
+				"public\\javascripts\\messagebox\\messageInputCtrl.js"
+			],
+			[
+				"mainc",
+				"public\\javascripts\\mainCtrl.js"
+			],
+			[
+				"dre",
+				"util\\discussionRenderer.js"
+			],
+			[
+				"sty",
+				"public\\stylesheets\\style.css"
+			],
+			[
+				"angular",
+				"public\\javascripts\\messagebox\\angularDropdown.js"
+			],
+			[
+				"animationservice",
+				"public\\javascripts\\services\\animationService.js"
+			],
+			[
+				"discussioncacheservice",
+				"public\\javascripts\\services\\discussionCacheService.js"
+			],
+			[
+				"ao",
+				"views\\components\\additionalOptionsDropdown.ejs"
+			],
+			[
+				"panel.",
+				"views\\components\\panel.ejs"
+			],
+			[
+				"dropdo",
+				"public\\javascripts\\messagebox\\angularDropdown.js"
+			],
+			[
+				"ma",
+				"public\\javascripts\\messagebox\\messageAdditionalOptionsCtrl.js"
+			],
+			[
+				"cur",
+				"public\\javascripts\\services\\cursorService.js"
+			],
+			[
+				"mesic",
+				"public\\javascripts\\messagebox\\messageInputCtrl.js"
+			],
+			[
+				"top",
+				"views\\components\\topDiscussions.ejs"
+			],
+			[
+				"ap",
+				"app.js"
+			],
+			[
+				"produ",
+				"views\\productionIndex.ejs"
+			],
+			[
+				"topd",
+				"views\\components\\topDiscussions.ejs"
+			],
+			[
+				"discu.ej",
+				"views\\components\\discussion.ejs"
+			],
+			[
+				"dic",
+				"public\\javascripts\\discussionCtrl.js"
+			],
+			[
+				"mac",
+				"public\\javascripts\\messagebox\\messageAdditionalOptionsCtrl.js"
+			],
+			[
+				"angul",
+				"public\\javascripts\\messagebox\\angularDropdown.js"
+			],
+			[
+				"uti",
+				"util\\util.js"
+			],
+			[
+				"discu",
+				"routes\\discussionRoutes.js"
+			],
+			[
+				"passpo",
+				"routes\\passportRoutes.js"
+			],
+			[
+				"opti",
+				"public\\javascripts\\services\\optimizationService.js"
+			],
+			[
+				"logi",
+				"views\\components\\loginDialog.ejs"
+			],
+			[
+				"sign",
+				"views\\components\\signup.ejs"
+			],
+			[
+				"authenti",
+				"public\\javascripts\\dialogs\\authenticationDialogCtrl.js"
+			],
+			[
+				"discussionren",
+				"util\\discussionRenderer.js"
+			],
+			[
+				"disdi",
+				"public\\javascripts\\dialogs\\discussionDialogCtrl.js"
+			],
+			[
+				"discuh",
+				"util\\discussionHandler.js"
+			],
+			[
+				"appha",
+				"util\\appHandler.js"
+			],
+			[
+				"apphand",
+				"util\\appHandler.js"
+			],
+			[
+				"mic",
+				"public\\javascripts\\messagebox\\messageInputCtrl.js"
+			],
+			[
+				"discussioc",
+				"public\\javascripts\\discussionCtrl.js"
+			],
+			[
+				"mi.ej",
+				"views\\components\\messageInput.ejs"
+			],
+			[
+				"messageic",
+				"public\\javascripts\\messagebox\\messageInputCtrl.js"
+			],
+			[
+				"dishan",
+				"util\\discussionHandler.js"
+			],
+			[
+				"st",
+				"public\\stylesheets\\style.css"
+			],
+			[
+				"bundl",
+				"public\\production\\javascripts\\bundle.min.js"
+			],
+			[
+				"min",
+				"scripts\\minify.js"
+			],
+			[
+				"angular-d",
+				"public\\stylesheets\\angular-dropdowns.min.css"
+			],
+			[
+				"index",
+				"views\\index.ejs"
+			],
+			[
+				"messa",
+				"public\\javascripts\\messageInputCtrl.js"
+			],
+			[
+				"discussio",
+				"views\\components\\discussion.ejs"
+			],
+			[
+				"dsc",
+				"public\\javascripts\\discussionCtrl.js"
+			],
+			[
+				"discusionr",
+				"util\\discussionRenderer.js"
+			],
+			[
+				"pass",
+				"config\\passport.js"
+			],
+			[
+				"discusmod",
+				"app\\models\\discussionModel.js"
+			],
+			[
+				"discusionre",
+				"util\\discussionRenderer.js"
+			],
+			[
+				"discussiondia",
+				"public\\javascripts\\discussionDialogCtrl.js"
+			],
+			[
+				"d",
+				"views\\components\\discussion.ejs"
+			],
+			[
+				"pane",
+				"views\\components\\panel.ejs"
+			],
+			[
+				"he",
+				"views\\components\\header.ejs"
+			],
+			[
+				"test",
+				"public\\stylesheets\\test.css"
+			],
+			[
+				"topdisc",
+				"views\\components\\production\\topDiscussions.ejs"
+			],
+			[
+				"ang",
+				"public\\javascripts\\libs\\angular-dropdowns.js"
+			],
+			[
+				"ag",
+				"public\\javascripts\\libs\\angular-dropdowns.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Users\\simon\\Documents\\GitHub\\leetcode\\leetcode.sublime-project"
+			]
+		],
+		"width": 526.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 274.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
