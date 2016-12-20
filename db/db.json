@@ -1,8 +1,8 @@
 {
-    "db": {
+    "f2a421d9-7e2f-48f5-873f-b3b5d4a03632": {
         "serverTemplateUnparsedText": "",
         "interpolationText": "",
         "ngIncludeText": "",
-        "ngBindHtmlText": ""
+        "ngBindHtmlText": "a"
     }
 }

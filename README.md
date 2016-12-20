@@ -17,7 +17,7 @@ npm install
 npm start
 ```
 
-The site should be running on http:localhost:3000
+The site should be running on http://localhost:3000
 
 To run in production first type into your command prompt "gulp" to minify the files
 followed by "npm run p".

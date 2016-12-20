@@ -1,5 +1,5 @@
 <div class="flex-container one-input-two-buttons">
-    <input type="text" ng-model="inputTextModel">
+    <input type="text" ng-model="inputTextModel" ng-keyup="$event.keyCode == 13 ? submitTextFields() : null">
     <button type="button" class="btn btn-default" ng-click="populateInputText()" ng-bind="populateButtonLabel"></button>
     <button type="button" class="btn btn-primary" ng-click="submitTextFields()" ng-bind="submitButtonLabel"></button>
 </div>

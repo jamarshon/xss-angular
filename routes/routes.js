@@ -1,30 +1,15 @@
-var express = require('express');
-var fs 		= require('fs');
-var Q 		= require('q');
+var DBUtil 			= require('../utils/db-util');
+var express 		= require('express');
+var Q 					= require('q');
 
-var DB_PATH 		= './db/db.json';
-var DEFAULT_DB_PATH = './db/db-default.json';
 var router 			= express.Router();
 
-var databaseOperationFn = function(dataBasePath, dbOperationCallback, res) {
-	fs.readFile(dataBasePath, 'utf8', function(err, data){
-		if(err){
-			res.status(404).send(err);
-		} else {
-			var obj = JSON.parse(data);
-			dbOperationCallback(obj).then(function(modifiedObj){
-				if(modifiedObj) {
-					var objToSave = JSON.stringify(modifiedObj, null, 4);
-					fs.writeFile(dataBasePath, objToSave, function(err){
-					  if (err) {
-					  	res.status(404).send(err);
-					  } else {
-					  	res.sendStatus(200);
-					  }
-					});
-				}
-			});
-		}
+/* Generic functions to handle similar routes */
+var getDBAbstractFn = function(req, res, transformationFn) {
+	DBUtil.getDBObjectOrDefault(req.sessionID).then(function(obj){
+		res.send(transformationFn(obj));
+	}, function(err){
+		res.status(404).send(err);
 	});
 };
 
@@ -40,45 +25,43 @@ router.get('/templates/:templateName', function(req, res, next) {
 });
 
 router.get('/server-templates/:templateName', function(req, res, next) {
-	databaseOperationFn(DB_PATH, function(obj){
-		var deferred = Q.defer();
-		res.render('server-templates/' + req.params.templateName, obj.db);
-		deferred.resolve(null);
-		return deferred.promise;
-	}, res);
+	DBUtil.getDBObjectOrDefault(req.sessionID).then(function(obj){
+		res.render('server-templates/' + req.params.templateName, obj[req.sessionID]);
+	}, function(err){
+		res.status(404).send(err);
+	});
 });
 
 router.get('/getDB', function(req, res, next) {
-	databaseOperationFn(DB_PATH, function(obj){
-		var deferred = Q.defer();
-		res.send(obj.db);
-		deferred.resolve(null);
-		return deferred.promise;
-	}, res);
+	getDBAbstractFn(req, res, function(obj){ return obj[req.sessionID]; });
+});
+
+router.get('/getDBAll', function(req, res, next) {
+	getDBAbstractFn(req, res, function(obj){ return obj; });
 });
 
 router.post('/modifyDB', function(req, res, next) {
-	databaseOperationFn(DB_PATH, function(obj){
-		var deferred = Q.defer();
-		obj.db[req.body.key] = req.body.value;
-		deferred.resolve(obj);
-		return deferred.promise;
-	}, res);
+	DBUtil.modifyDB(req.sessionID, req.body.key, req.body.value).then(function(){
+		res.sendStatus(200);
+	}, function(err) {
+		res.status(404).send(err);
+	});
 });
 
 router.post('/cleanDB', function(req, res, next) {
-	databaseOperationFn(DB_PATH, function(obj){
-		var deferred = Q.defer();
+	DBUtil.cleanDB(req.sessionID).then(function(){
+		res.sendStatus(200);
+	}, function(err) {
+		res.status(404).send(err);
+	});
+});
 
-		databaseOperationFn(DEFAULT_DB_PATH, function(defaultObj){
-			var defaultDBDeferred = Q.defer();
-			deferred.resolve(defaultObj);
-			defaultDBDeferred.resolve(null);
-			return defaultDBDeferred.promise;
-		}, res);
-
-		return deferred.promise;
-	}, res);
+router.get('/cleanDBAll', function(req, res, next) {
+	DBUtil.cleanDBAll().then(function(){
+		res.sendStatus(200);
+	}, function(err) {
+		res.status(404).send(err);
+	});
 });
 
 module.exports = router;

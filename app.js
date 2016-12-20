@@ -6,12 +6,23 @@ var favicon       = require('serve-favicon');
 var logger        = require('morgan');
 var mime          = require('mime');
 var path          = require('path');
+var session       = require('express-session');
+var uuid          = require('uuid');
 
 var routes = require('./routes/routes');
 
 var app = express();
 
 app.use(compression());
+app.use(session({
+  genid: function(req) {
+    return uuid(); // use UUIDs for session IDs
+  },
+  secret: 'xss-angular-secret',
+  resave: false,
+  saveUninitialized: true
+}));
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.engine('html', require('ejs').renderFile);
